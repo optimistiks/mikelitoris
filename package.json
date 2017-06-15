@@ -1,0 +1,17 @@
+{
+  "name": "mikelitoris",
+  "version": "0.0.1",
+  "description": "homeowner",
+  "main": "index.js",
+  "author": "optimistiks",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "firebase-admin": "^5.0.0"
+  },
+  "scripts": {
+    "deploy": "yarn run deploy:questions && yarn run deploy:functions",
+    "deploy:questions": "node index.js",
+    "deploy:functions": "firebase deploy --only functions"
+  }
+}
